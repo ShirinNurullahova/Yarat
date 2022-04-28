@@ -1,0 +1,43 @@
+.PaintingGalleryBox{
+    height:auto;
+    background-color: #0D0D0D;
+    padding:  50px 100px 100px 100px ;
+  
+}
+.PaintingGalleryBox h1{
+    font-size: 65px;
+    color: white;
+    font-weight: 700;
+}
+.distanceImageEnd{
+    margin-top: 22%;
+}
+#rightEnd{
+    margin-top: -20%;
+}
+@media only screen and (max-width:  1000px) {
+    
+    #rightEnd{
+        margin-top: 0;
+    }
+   
+     }
+     @media only screen and (max-width:  800px) {
+        .PaintingGalleryBox{
+            padding:50px 0 0 0  ;
+        }
+        
+    }
+    @media only screen and (max-width:  530px) {
+        .PaintingGalleryBox h1{
+            font-size: 50px;
+           
+        }
+               
+    }
+    @media only screen and (max-width:  410px) {
+        .PaintingGalleryBox h1{
+            font-size: 40px;
+         
+        }
+    } 

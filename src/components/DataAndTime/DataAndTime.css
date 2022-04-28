@@ -1,0 +1,102 @@
+.dataandtime {
+    margin-top: 10px;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+      position: relative;
+}
+.dataandtimeDiv{
+    position: absolute;
+     transform-origin: top left;
+     transition: all 1s ease;
+     z-index: 999;
+} 
+
+.dataandtimeDiv1{
+    position: absolute;
+     transform-origin:  right;
+     transition: all 1s ease;
+     z-index: 999;
+} 
+.dataandtimeDiv2{
+    position: absolute;
+     transform-origin: top left;
+     transition: all 1s ease;
+     z-index: 999;
+} 
+.clickDiv,.clickDiv1 ,.clickDiv2{
+    transform:   scale(1.5);
+    transition: all 1s ease;
+    z-index: 999;
+    
+}
+
+.lastFlower {
+    color:  #868686;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 3%;
+    font-weight: 700;
+    transition: 1s ease;
+    max-width: 50%;
+  
+}
+
+.click {
+    color: white;
+}
+.dataandtimeDiv span{
+    
+     width: 100%;
+    position: absolute;
+    z-index: 999;
+    color:  #3d3a3a;
+    font-weight: 700;
+    font-size: 40px;
+   
+}
+.dataandtimeDiv1{
+    position: absolute;
+    width: 40%;
+    text-align: right;
+    right: 0;
+    top: 25%;
+}
+.lastFlower1{
+    color:  #868686;
+    font-weight: 700;
+    font-size: 40px;
+}
+.click1{
+    color: white;
+}
+.lastFlowerSpan1{
+    color:  #3d3a3a;
+    font-weight: 700;
+    font-size: 40px;
+}
+.dataandtimeDiv2{
+    position: absolute;
+    width: 40%;
+    text-align: left;
+    left: 45%;
+    top: 75%;
+}
+.lastFlower2{
+    color:  #868686;
+    font-weight: 700;
+    font-size: 40px;
+}
+.click2{
+    color: white;
+}
+.lastFlowerSpan2{
+    color:  #3d3a3a;
+    font-weight: 700;
+    font-size: 40px;
+}
+@media only screen and (max-width:  1500px) {
+    .dataandtime {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    }
+}

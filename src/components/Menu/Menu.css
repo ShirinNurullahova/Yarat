@@ -1,0 +1,66 @@
+.MenuPage{
+    background-color: #0D0D0D;
+    position: fixed;
+    /* display: none; */
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    height: 0;
+    transition: all 1s ease-in;
+    overflow: hidden;
+    top: 0;
+    z-index: 1000;
+  
+}
+
+.open{
+    max-height: 100vh;
+    height: 100vh;
+    transition: all 1s ease-in;
+}
+.navbarTwo{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 7%;
+    border-bottom: 0.1px solid white;
+}
+
+.closeBtn{
+    width: 2%;
+}
+.navbarTwo p{
+    color: #868686;
+    font-size: 16px;
+}
+.navbarTwo ul {
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+}
+.navbarTwo ul li{
+    margin-left:20%;
+}
+@media only screen and (max-width: 560px) {
+    .navbarTwo{
+        padding: 10% 10%  10% 0;
+    }
+    .search{
+        display: none;
+    }
+    .navbarTwo ul li{
+        margin-left: 70%;
+        font-size: 16px;
+    }
+    .closeBtn {
+        width: 6%;
+    }
+   }
+   @media only screen and (max-width: 300px) {
+    .navbarTwo ul li{
+        margin-left: 40%;
+       
+    } 
+   }
+  

@@ -1,0 +1,51 @@
+.spaceBox{
+    height:fit-content;
+    background-color: #0D0D0D;
+    padding: 50px 100px 0 100px ;
+    
+}
+.spaceText{
+    font-size: 65px;
+    color: white;
+    font-weight: 700;
+}
+@media only screen and (max-width:  800px) {
+    
+    .spaceBox{
+        padding: 50px 0 0 0 ;
+     } 
+} 
+@media only screen and (max-width:  530px) {
+    .spaceText{
+        font-size: 50px;
+        padding: 0;
+    }
+           
+} 
+@media only screen and (max-width:  410px) {
+    .spaceText{
+        font-size: 40px;
+        
+    }
+       .spaceBox{
+        padding: 10px 0 0 0;
+    }     
+} 
+@media only screen and (max-width:  330px) {
+    .spaceBox{
+        padding: 0;
+    }
+           
+} 
+@media only screen and (max-width:  250px) {
+    
+    .spaceBox{
+        padding-top: 10px;
+    }
+       
+} 
+
+
+
+
+

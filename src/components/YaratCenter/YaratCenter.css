@@ -1,0 +1,259 @@
+.imageBox{
+    display: flex;
+    
+     width: auto; 
+ margin-top: 20px;
+
+
+  overflow: scroll;
+  /* white-space: nowrap; */
+}
+.imageBox::-webkit-scrollbar {
+    display: none;
+}
+#slider{
+    display: flex;
+    width: auto;
+}
+.imageBox1 ,.imageBox2{
+    
+    margin: 0 20px 0 0;
+}
+.imageBox1 img {
+   aspect-ratio: 970/425;
+  z-index: 998;
+   width: 970px;
+   
+}
+.imageBox2 img{
+    aspect-ratio: 370/425;
+     width: 370px;
+}
+.imageBox img:last-child{
+    margin-right: 30px;
+}
+.middleBox{
+    margin-left: 100px;
+   overflow-x: hidden;
+}
+.middleBoxP{
+ color: #868686;
+ font-size: 20px;
+}
+.middleBox h1{
+    margin-bottom: 40px;
+    font-size: 65px;
+    color: white;
+}
+.textPosition{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    margin-right: 40px;
+    color: white;
+    /* position: absolute; */
+}
+.textPosition button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+.position{
+   z-index: 999;
+   height: 400px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  margin-left: 4%;
+  /* margin-top: 10%; */
+  
+}
+.right{
+    /* margin-right: 10%; */
+}
+.textDown{
+    /* width: 600px; */
+    color: white;
+    font-size: 16px;
+}
+.positionUp{
+    display: flex;
+   margin-top: -90px;
+}
+ p .dif{
+    color: #868686; 
+}
+.positionUp p{
+    color: white;
+    font-size: 18px;
+}
+.positionUp img{
+    width: 20px;
+}
+.positionDown{
+    /* width: 32% ; */
+    margin-bottom: -20px;
+    font-size: 16px;
+    line-height: 30px;
+     opacity: 0;
+}
+.border{
+    border-bottom: 2px solid  #868686;;
+}
+
+.positionDown p{
+    width: 520px;
+    position: absolute;
+  
+}
+.positionDown{
+      transition: all 1s ease-in ;
+}
+.imageBox:hover .positionDown{
+      opacity: 1;
+      transition: all 1s ease-in ;
+}
+.imageBox:hover img{
+    opacity: 0.6;
+    transition: all 1s ease-in ;
+}
+.imageBox img{
+    transition: all 1s ease-in ;
+}
+@media only screen and (max-width: 800px) {
+    .middleBox{
+        margin-left: 0;
+    }
+    .textPosition{
+       margin-bottom: 10px;
+    }
+  }
+@media only screen and (max-width: 740px) {
+     .textDown{
+         width: 350px;
+     }
+   }
+   
+   @media only screen and (max-width:  680px) {
+    
+  .positionDown p{
+      width: 400px;
+  }
+
+  } 
+ 
+  @media only screen and (max-width: 640px) {
+    .middleBox h1{
+        font-size: 50px;
+    }
+    .right{
+        /* margin-right: 17%; */
+    }
+ }
+ @media only screen and (max-width:  530px) {
+    
+    .positionDown p{
+        width: 300px;
+    }
+     .positionDown{
+      margin-bottom: 30px;
+     }
+    } 
+ @media only screen and (max-width:  500px) {
+      .middleBox{
+          margin-left: 10px;
+      }
+      .right{
+        /* margin-right: 4%; */
+    }
+ } 
+ @media only screen and (max-width:  420px) {
+    .position{
+        margin-top: 10%;
+    }
+} 
+ @media only screen and (max-width:  400px) {
+    .middleBox h1{
+        font-size: 40px;
+    }
+    .imageBox1 img{
+        width: 850px;
+        aspect-ratio: 850/425;
+    }
+    .position{
+        height: 330px;
+    }
+   .imageBox{
+       margin-top: 0;
+   }
+   .textPosition{
+       margin-top: 0;
+   }
+   .imageBox2 img{
+    width: 300px;
+    aspect-ratio: 200/252;
+    margin-top: 23px;
+}
+
+}
+@media only screen and (max-width:  370px) {
+   .textDown{
+       width: 300px;
+   }
+} 
+@media only screen and (max-width:  330px) {
+    
+    .positionDown p{
+        width: 250px;
+    }
+     .positionDown{
+      margin-bottom: -20px;
+     }
+    } 
+@media only screen and (max-width:  320px) {
+    
+    .middleBox h1{
+        font-size: 35px;
+    }
+    .textDown{
+        width: 230px;
+    }
+    .position{
+        height: 300px;
+    }
+ } 
+ @media only screen and (max-width:  280px) {
+   .position{
+       height: 250px;
+   }
+   .textDown{
+    width: 220px;
+}
+.middleBox h1{
+    font-size: 30px;
+}
+.positionDown p{
+    width: 200px;
+}
+ } 
+ @media only screen and (max-width:  240px) {
+    
+    .textDown{
+     width: 200px;
+ }
+
+  } 
+  @media only screen and (max-width:  215px) {
+    .positionDown p{
+        width: 150px;
+    }
+    .textDown{
+     width: 180px;
+ }
+ .positionDown{
+    margin-bottom: 10px;
+   }
+  } 

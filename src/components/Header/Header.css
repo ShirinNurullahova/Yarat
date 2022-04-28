@@ -1,0 +1,44 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    background-color: #0D0D0D;
+    align-items: center;
+    padding: 0 100px 0 100px;
+}
+.navbar_text{
+    color: white;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.menuTextDiv{
+    position: relative; 
+    display: flex;
+ align-items: center;
+}
+.menuText{
+    color:white;
+   
+    margin: 0 0 0 -60px;
+    position: absolute;
+}
+.menuIcon{
+    width: 70%;
+}
+
+@media only screen and (max-width:  640px) {
+    .navbar{
+        height: 15vh;
+    }
+ } 
+
+  @media only screen and (max-width:  500px) {
+     .navbar{
+         padding: 0 10px 0 10px;
+        
+     }
+  } 
+

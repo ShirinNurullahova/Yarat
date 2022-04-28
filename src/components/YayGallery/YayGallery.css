@@ -1,0 +1,38 @@
+.YayGalleryBox{
+    height:auto;
+    background-color: #0D0D0D;
+    padding: 50px 100px 0 100px ;
+  
+}
+.YayGalleryBox h1{
+    font-size: 65px;
+    color: white;
+    font-weight: 700;
+}
+.distanceImage{
+    margin-top: 22%;
+}
+#right{
+    margin-top: -19%;
+}
+@media only screen and (max-width:  800px) {
+    .YayGalleryBox{
+        padding:50px 0 0 0  ;
+    }
+    #right{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width:  530px) {
+    .YayGalleryBox h1{
+        font-size: 50px;
+        padding: 0;
+    }
+           
+}
+@media only screen and (max-width:  410px) {
+    .YayGalleryBox h1{
+        font-size: 40px;
+     
+    }
+} 

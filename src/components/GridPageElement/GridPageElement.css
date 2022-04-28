@@ -1,0 +1,40 @@
+.into{
+    border: 1px solid  #373737;
+    height: 35vh;
+    width: 100%;
+    position: relative;
+}
+
+.imagePosition{
+    opacity: 0;
+  
+    z-index: 997;
+    /* width: 100%; */
+}
+.imagePosition img{
+    width: 100%;
+   height: 100%;
+   position: absolute;
+}
+.active{ 
+    opacity: 1; 
+    transition: opacity 1s linear;
+}
+.month{
+     font-size: 15px;
+    font-weight: 500; 
+    color: #868686;
+   margin-left: 50%;
+}
+.days{
+    z-index: 999;
+    margin-right: 7px;
+}
+.activeBorder{
+    border: 1px solid white;
+}
+@media only screen and (max-width:  1500px) {
+    .month{
+      margin-left: 55%;
+   } 
+}

@@ -1,0 +1,33 @@
+.daysTextP1 ,.daysTextP2 ,.daysTextP3,.daysTextP4{
+    color: #FAFAFA;
+   font-size: 10px;
+}
+
+.redPoint{
+    width: 15px;
+   margin-top: -5%;
+   margin-left: 5%;
+}
+.daysTextP1 {
+    margin-bottom: 20px;
+    width: 80%;
+}
+.daysTextP2 {
+    margin-bottom: 20px;
+}
+.daysTextP3 {
+    margin-bottom: 20px;
+}
+.daysElement{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+     /* height: 40vh; */
+}
+.daysText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 10%;
+}

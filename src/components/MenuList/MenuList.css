@@ -1,0 +1,143 @@
+
+.FlexDiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 7% 20% 0 8%;
+    background-color: #0D0D0D;
+  
+}
+.textDifferent{
+    margin-top: 0;
+   margin-bottom: 20px;
+    /* font-weight: 700; */
+     font-size: 20px;
+      line-height: 150%;
+        color:white ;
+}
+.hoverBox{
+    position: relative;
+}
+.hoverBox p, .hoverBox a{
+  margin-bottom: 10px;
+   color: #868686;
+   font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  
+}
+.hoverBox{
+    width: max-content ;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+      padding-top: 10%;
+      padding-right: 7%;
+      background-color: #0D0D0D;
+      height: 30vh;
+}
+.footer p , .about{
+    color: white;
+    font-size: 20px;
+    /* font-weight: 700; */
+    line-height:30px;
+     letter-spacing: 15%;
+     margin-left: 10%;
+}
+.showPicture{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transform:  translate(100% , -18%) ;
+    transform-origin: right top;
+    z-index: 998;
+    max-width: 200px;
+}
+.lorem:hover + .showPicture {
+    opacity: 1;
+    z-index: 999;
+    transform:  translate(100% ,-18%) ;
+    /* transition: all 1s ease-in; */
+}
+@keyframes example {
+    0% {
+        color: #868686;
+    }
+    25% {
+        color: #868686;
+    }
+    50% {
+        color: #868686;
+    }
+    100% {
+        color: white;
+    }
+}
+.lorem, .lorem a{
+    transition: all 1s;
+}
+.lorem:hover, .lorem a:hover{
+    color: white;
+    animation-name: other-example;
+    animation-duration: 0.35s;
+}
+@media only screen and (max-width: 1000px) {
+ .hoverBox p ,.lorem a{
+     font-size: 16px;
+ }
+    
+}
+@media only screen and (max-width: 800px) {
+    .FlexDiv{
+        padding: 7% 10% 0 5%;
+    }
+    .textDifferent{
+        font-size: 16px;
+    }
+   }
+   @media only screen and (max-width: 650px) {
+    .FlexDiv{
+        padding: 7% 5% 0 5%;
+    }
+   }
+   @media only screen and (max-width: 560px) {
+    .FlexDiv{
+        padding: 15% 5% 0 5%;
+    }
+    .hoverBox p {
+        font-size: 20px;
+    }
+    .textDifferent{
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+    .lorem{
+        display: none;
+    }
+    .FlexDiv{
+        flex-direction: column;
+        direction: rtl;
+    }
+    .footer{
+        flex-direction: column;
+        direction: rtl;
+        margin-top: -60px;
+       justify-content: space-around;
+        padding-top: 30px;
+    }
+    .footer p{
+        font-size: 20px;
+    }
+    .about{
+        font-size: 20px;
+   
+     margin-top: 10px;
+     margin-bottom: 35px;
+    }
+   }
+   @media only screen and (max-width: 220px) {
+       .textDifferent{
+           font-size: 16px;
+       }
+}
