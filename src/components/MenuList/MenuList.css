@@ -164,18 +164,21 @@ text-align: left;
     .lorem {
         display: none;
     }
-
+     .box{
+         text-align: right;
+     }
     .FlexDiv {
         flex-direction: column;
-        direction: rtl;
+        align-items: flex-end;
     }
 
     .footer {
         flex-direction: column;
-        direction: rtl;
+      padding-right: 4%;
         margin-top: -60px;
         justify-content: space-around;
         padding-top: 30px;
+        align-items: flex-end;
     }
 
     .footer p {

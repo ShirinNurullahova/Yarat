@@ -63,34 +63,36 @@ const MenuList = (props)=>{
                 </div>
 
                 <div className="box">
-                    <p className="textDifferent" >PUBLIC PROGRAMS</p>
+                <Link to="/exhibition" onClick={props.open ? props.open : null}  style={{ textDecoration: 'none'}} >
+                <p className="textDifferent" >PUBLIC PROGRAMS</p>
+             </Link>
 
                     <div className="hoverBox">
-                        <p className="lorem">EVENTS</p>
+                    <p className="lorem"><Link onClick={props.open ? props.open : null}  to="/yaratcenter" style={{ textDecoration: 'none'}}>EVENTS </Link></p>
                         {props.open && 
                            <img className='showPicture'  src={random} />
                            }
                     </div>
                     <div className="hoverBox">
-                        <p className="lorem">FREESTYLE</p>
+                    <p className="lorem"><Link onClick={props.open ? props.open : null}  to="/space" style={{ textDecoration: 'none'}}>FREESTYLE</Link></p>
                         {props.open && 
                            <img className='showPicture'  src={random} />
                            }
                     </div>
                     <div className="hoverBox">
-                        <p className="lorem">FILM CLUB</p>
+                    <p className="lorem"><Link onClick={props.open ? props.open : null}  to="/painting" style={{ textDecoration: 'none'}}> FILM CLUB</Link></p>
+                        {props.open &&
+                           <img className='showPicture'  src={random} />
+                           }
+                    </div>
+                    <div className="hoverBox">
+                    <p className="lorem">  <Link onClick={props.open ? props.open : null} to="/gridpage/gridview" style={{ textDecoration: 'none'}}> LITERATURE CLUB</Link> </p>
                         {props.open && 
                            <img className='showPicture'  src={random} />
                            }
                     </div>
                     <div className="hoverBox">
-                        <p className="lorem">LITERATURE CLUB</p>
-                        {props.open && 
-                           <img className='showPicture'  src={random} />
-                           }
-                    </div>
-                    <div className="hoverBox">
-                        <p className="lorem">THEATRE CLUB</p>
+                    <p className="lorem">  <Link onClick={props.open ? props.open : null} to="/gridpage/gridview" style={{ textDecoration: 'none'}}> THEATRE CLUB</Link> </p>
                         {props.open && 
                            <img className='showPicture'  src={random} />
                            }
@@ -98,40 +100,42 @@ const MenuList = (props)=>{
                     
                 </div>
                 <div className="box">
-                    <p className="textDifferent" >EDUCATION</p>
+                <Link to="/exhibition" onClick={props.open ? props.open : null}  style={{ textDecoration: 'none'}} >
+                <p className="textDifferent" >EDUCATION</p>
+             </Link>
 
                     <div className="hoverBox">
-                        <p className="lorem">LITTLE YARAT</p>
+                    <p className="lorem"><Link onClick={props.open ? props.open : null}  to="/yaratcenter" style={{ textDecoration: 'none'}}> LITTLE YARAT</Link></p>
                         {props.open && 
                            <img className='showPicture'  src={random} />
                            }
                     </div>
                     <div className="hoverBox">
-                        <p className="lorem">LITTLE MASTER</p>
+                    <p className="lorem"><Link onClick={props.open ? props.open : null}  to="/yaygalerry" style={{ textDecoration: 'none'}}> LITTLE MASTER</Link></p>
                         {props.open && 
                            <img className='showPicture'  src={random} />
                            }
                     </div>
                     <div className="hoverBox">
-                        <p className="lorem">SCHOOLS</p>
+                    <p className="lorem"><Link onClick={props.open ? props.open : null}  to="/painting" style={{ textDecoration: 'none'}}>  SCHOOLS</Link></p>
+                        {props.open &&
+                           <img className='showPicture'  src={random} />
+                           }
+                    </div>
+                    <div className="hoverBox">
+                    <p className="lorem"><Link onClick={props.open ? props.open : null}  to="/space" style={{ textDecoration: 'none'}}> WORKSHOPS</Link></p>
+                        {props.open &&
+                           <img className='showPicture'  src={random} />
+                           }
+                    </div>
+                    <div className="hoverBox">
+                    <p className="lorem"><Link onClick={props.open ? props.open : null}  to="/painting" style={{ textDecoration: 'none'}}> ACADEMY</Link></p>
                         {props.open && 
                            <img className='showPicture'  src={random} />
                            }
                     </div>
                     <div className="hoverBox">
-                        <p className="lorem">WORKSHOPS</p>
-                        {props.open && 
-                           <img className='showPicture'  src={random} />
-                           }
-                    </div>
-                    <div className="hoverBox">
-                        <p className="lorem">ACADEMY</p>
-                        {props.open && 
-                           <img className='showPicture'  src={random} />
-                           }
-                    </div>
-                    <div className="hoverBox">
-                        <p className="lorem">ART VOLUNTEER</p>
+                    <p className="lorem"><Link onClick={props.open ? props.open : null}  to="/yaygalerry" style={{ textDecoration: 'none'}}> ART VOLUNTEER</Link></p>
                         {props.open && 
                            <img className='showPicture'  src={random} />
                            }

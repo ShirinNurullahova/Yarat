@@ -39,6 +39,7 @@
 .middleBoxP{
  color: #868686;
  font-size: 20px;
+ margin-bottom: 10px;
 }
 .middleBox h1{
     margin-bottom: 40px;
@@ -60,6 +61,7 @@
     border: none;
     color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 .position{
    z-index: 999;
@@ -112,7 +114,7 @@ margin-left:10px;
 .positionDown p{
     width: 520px;
     position: absolute;
-  
+   
 }
 .positionDown{
       transition: all 1s ease-in ;
