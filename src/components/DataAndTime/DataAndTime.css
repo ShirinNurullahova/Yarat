@@ -10,6 +10,7 @@
      transform-origin: top left;
      transition: all 1s ease;
      z-index: 999;
+     width: 50%;
 } 
 
 .dataandtimeDiv1{
@@ -38,13 +39,14 @@
     margin-top: 3%;
     font-weight: 700;
     transition: 1s ease;
-    max-width: 50%;
-  
+    max-width: 100%;
+ cursor: pointer;
 }
 
 .click {
     color: white;
 }
+
 .dataandtimeDiv span{
     
      width: 100%;
@@ -54,6 +56,9 @@
     font-weight: 700;
     font-size: 40px;
    
+}
+.clickSpan , .clickSpan1 ,.clickSpan2{
+    color:  #616060 !important;
 }
 .dataandtimeDiv1{
     position: absolute;
@@ -66,10 +71,12 @@
     color:  #868686;
     font-weight: 700;
     font-size: 40px;
+    cursor: pointer;
 }
 .click1{
     color: white;
 }
+
 .lastFlowerSpan1{
     color:  #3d3a3a;
     font-weight: 700;
@@ -86,6 +93,7 @@
     color:  #868686;
     font-weight: 700;
     font-size: 40px;
+    cursor: pointer;
 }
 .click2{
     color: white;

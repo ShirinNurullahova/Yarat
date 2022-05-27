@@ -9,12 +9,14 @@
 .home_page_box{
      /* margin: 13%; */
     text-align: center;
+    width: 100%;
 }
 .home_page_box_text{
     color: white;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 67px;
+    font-size: 80px;
+    width: 100%;
 }
 @media only screen and (max-width: 560px) {
     .home_page_box_text{

@@ -24,7 +24,7 @@
      font-size: 15px;
     font-weight: 500; 
     color: #868686;
-   margin-left: 50%;
+   margin-left: 75%;
 }
 .days{
     z-index: 999;
@@ -35,6 +35,6 @@
 }
 @media only screen and (max-width:  1500px) {
     .month{
-      margin-left: 55%;
+      margin-left: 65%;
    } 
 }

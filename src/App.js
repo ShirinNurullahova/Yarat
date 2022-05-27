@@ -21,7 +21,7 @@ const App = () => {
             <Header menu={isMenu} />
             <Switch>
                 <Suspense fallback="...loading">
-                    <Route path='/home' >
+                    <Route path='/' exact>
                         <HomePage />
                          {windowSize}
                     </Route>
@@ -62,10 +62,7 @@ const App = () => {
 
 
 
-                    <Route path='*'>
-                        <Redirect to='/home' />
-
-                    </Route>
+              
 
                 </Suspense>
             </Switch>

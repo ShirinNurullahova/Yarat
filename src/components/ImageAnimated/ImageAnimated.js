@@ -3,9 +3,13 @@ import "./ImageAnimated.css";
 import random from '../../images/rectangle39.svg';
 
 
-const ImageAnimated = ({title}) => {
-  const imgArr = [random, random, random, random];
-  console.log(title)
+const ImageAnimated = () => {
+  const title = [{ pg: "Aliquet nunc volutpat aliquam est malesuada ut /", span: " 12 SEP - 12 NOV 21" },
+  { pg: "Et magna venenatis aliquam nec, faucibus neque /", span: " 8 FEB - 8 MAR 21 " },
+  { pg: "Proin non at dolor sed lorem nibh / ", span: "16 MAR - 14 MAR 21" },
+  { pg: "Scelerisque et platea pellentesque vel vestibulum sed cras amet /", span: " 25 MAR - 25 APR 21" }]
+  const imgArr = [{random: random, title:title[0].pg},{random: random, title:title[1].pg},{random: random, title:title[2].pg},{random: random, title:title[3].pg}];
+ 
   const canvasFixed = useRef();
   let id,id2,id3
   let i = 0;
@@ -75,12 +79,24 @@ const ImageAnimated = ({title}) => {
     // console.log({active})
     if(active === 0){
         id = setInterval(() => {
+            var div = document.createElement("div");
             var img = document.createElement("img");
-            img.src = imgArr[i];
+            
+            var textTitle =document.createElement("p");
+            img.src = imgArr[i].random;
+            textTitle.textContent=imgArr[i].title
+            
             img.className = "imageHolderImg";
+            textTitle.className = "titleHeader";
+
             img.style.top = mouse.cY + "px";
             img.style.left = mouse.cX + "px";
+
+            textTitle.style.top = mouse.cY + "px";
+            textTitle.style.left = mouse.cX + "px";
+          
             canvasFixed.current.appendChild(img);
+            canvasFixed.current.appendChild(textTitle);
             if (i < imgArr.length-1) i++;
             else i=0
           }, 200);

@@ -41,6 +41,7 @@
 }
 .navbarTwo ul li{
     margin-left:20%;
+    cursor: pointer;
 }
 @media only screen and (max-width: 560px) {
     .navbarTwo{

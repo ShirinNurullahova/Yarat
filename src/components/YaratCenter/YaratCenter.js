@@ -73,7 +73,7 @@ const YaratCenter = ({ menuHandler }) => {
                    
                 </div>
                 <div className="textPosition">
-                    <button  onClick={slideLeft}>LEFT</button>
+                    <button  className="left" onClick={slideLeft}>LEFT</button>
                     <button onClick={slideRight} className="right">RIGHT</button>
                 </div>
             </div>

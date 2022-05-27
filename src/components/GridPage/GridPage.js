@@ -2,7 +2,7 @@ import React , {useEffect ,useState} from "react";
 import { Route } from "react-router-dom";
 import '../../components/GridPage/GridPage.css'
 import GridPageElement from "../GridPageElement/GridPageElement";
-import calendar from '../../images/Rectangle 39.svg'
+import calendar from '../../images/grid.jpg'
 import MenuList from "../MenuList/MenuList";
 import GridPageHeader from "../GridPageHeader/GridPageHeader";
 import DataAndTime from "../DataAndTime/DataAndTime";

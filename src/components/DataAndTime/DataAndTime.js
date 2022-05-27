@@ -32,15 +32,15 @@ const DataAndTime =({imagesZindex, menuHandler })=>{
     return(
         <div className="dataandtime" >
                         <div  onClick={toggleclick}  className={`dataandtimeDiv ${isClick && 'clickDiv'} `}>
-                            <h1  className={`lastFlower ${isClick && 'click'} `}>LAST FLOWERS OF XX CENTURY – GENERATION Y GROUP EXHIBITION <br/> <span className="lastFlowerSpan">10 JUN - 20 DEC 21</span> </h1>
+                            <h1  className={`lastFlower ${isClick && 'click'} `}>LAST FLOWERS OF XX CENTURY – GENERATION Y GROUP EXHIBITION <br/> <span className={`lastFlowerSpan ${isClick && 'clickSpan'} `}>10 JUN - 20 DEC 21</span> </h1>
                           
                         </div>
                        <div onClick={toggleclickTwo}  className={`dataandtimeDiv1 ${isClickTwo && 'clickDiv1'} `}>
-                           <h1 className={`lastFlower1 ${isClickTwo && 'click1'} `}>RASHAD ALAKBAROV LOOK AT YOU! SOLO SHOW<br/><span className="lastFlowerSpan1">10 JUN - 30 DEC 21</span>   </h1>
+                           <h1 className={`lastFlower1 ${isClickTwo && 'click1'} `}>RASHAD ALAKBAROV LOOK AT YOU! SOLO SHOW<br/><span className={`lastFlowerSpan1 ${isClickTwo && 'clickSpan1'} `}>10 JUN - 30 DEC 21</span>   </h1>
                                             
                         </div>
                         <div onClick={toggleclickThree}  className={`dataandtimeDiv2 ${isClickThree && 'clickDiv2'} `}>
-                           <h1 className={`lastFlower2 ${isClickThree && 'click2'} `}>MAKE AN ISLAND FOR YOURSELF <br/> <span  className="lastFlowerSpan2"> 1 JUN - 30 SEP 21</span></h1>
+                           <h1 className={`lastFlower2 ${isClickThree && 'click2'} `}>MAKE AN ISLAND FOR YOURSELF <br/> <span  className={`lastFlowerSpan2 ${isClickThree && 'clickSpan2'} `}> 1 JUN - 30 SEP 21</span></h1>
                                            
                         </div>
                      { imagesZindex.map((element , index)=> {

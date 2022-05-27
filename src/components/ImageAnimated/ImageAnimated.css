@@ -7,11 +7,17 @@
     right: 0;
     bottom: 0;
 }
-.imageHolder{
+.imageHolder ,.titleHeader{
     position: absolute;
     
 }
-
+.titleHeader{
+    margin-top:12%;
+    color:white;
+    margin-left:1%;
+    width: 13%;
+    font-size: 12px;
+}
 .imageHolderImg{
     position: absolute;
     width: 180px;

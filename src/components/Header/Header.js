@@ -21,7 +21,7 @@ const  Header =(props)=>{
      }
     return(
         <div className="navbar">
-                <Link style={{textDecoration :'none'}} to='/home'><p className="navbar_text">YARAT█</p> </Link>
+                <Link style={{textDecoration :'none'}} to='/'><p className="navbar_text">YARAT█</p> </Link>
                                      <div className="menuTextDiv">
                                       {props.menu && <p style={{ color: 'white' , textAlign:"center" }} className="menuText">MENU</p>}
                

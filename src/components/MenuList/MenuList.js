@@ -140,7 +140,7 @@ const MenuList = (props)=>{
                 </div>
                 <div className="footer">
                 <p className="about">PRESS</p >
-                <p >ABOUT</p>
+                <p className="press" >ABOUT</p>
             </div>
             </div>
             

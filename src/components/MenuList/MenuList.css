@@ -1,143 +1,197 @@
-
-.FlexDiv{
+.FlexDiv {
     display: flex;
     justify-content: space-between;
-    padding: 7% 20% 0 8%;
+    padding: 4% 20% 0 8%;
     background-color: #0D0D0D;
-  
+
 }
-.textDifferent{
+
+.textDifferent {
     margin-top: 0;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
     /* font-weight: 700; */
-     font-size: 20px;
-      line-height: 150%;
-        color:white ;
+    font-size: 20px;
+    line-height: 150%;
+    color: white;
+    font-family: Helvetica Neue;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.15em;
+text-align: left;
+cursor: pointer;
 }
-.hoverBox{
+
+.hoverBox {
     position: relative;
 }
-.hoverBox p, .hoverBox a{
-  margin-bottom: 10px;
-   color: #868686;
-   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
-  
+
+.hoverBox p,
+.hoverBox a {
+    margin-bottom: 10px;
+    color: #868686;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+  cursor: pointer;
+    position: relative;
+  width: 100%;
 }
-.hoverBox{
-    width: max-content ;
+
+.about ,.press {
+    cursor: pointer;
+    font-family: Helvetica Neue;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.15em;
+text-align: left;
+
 }
-.footer{
+
+.hoverBox:hover {
+    width: max-content;
+}
+
+.footer {
     display: flex;
     justify-content: flex-end;
-      padding-top: 10%;
-      padding-right: 7%;
-      background-color: #0D0D0D;
-      height: 30vh;
+    padding-top: 12%;
+    padding-right: 7%;
+    background-color: #0D0D0D;
+    /* height: 30vh; */
+    position: relative;
 }
-.footer p , .about{
+
+.footer p,
+.about {
     color: white;
     font-size: 20px;
     /* font-weight: 700; */
-    line-height:30px;
-     letter-spacing: 15%;
-     margin-left: 10%;
+    line-height: 30px;
+    letter-spacing: 15%;
+    margin-left: 10%;
+    position: relative;
 }
-.showPicture{
+
+.showPicture {
     position: absolute;
     right: 0;
     opacity: 0;
-    transform:  translate(100% , -18%) ;
+    transform: translate(100%, -18%);
     transform-origin: right top;
     z-index: 998;
     max-width: 200px;
 }
-.lorem:hover + .showPicture {
+
+.lorem:hover+.showPicture {
     opacity: 1;
     z-index: 999;
-    transform:  translate(100% ,-18%) ;
+    transform: translate(100%, -18%);
     /* transition: all 1s ease-in; */
 }
+
 @keyframes example {
     0% {
         color: #868686;
     }
+
     25% {
         color: #868686;
     }
+
     50% {
         color: #868686;
     }
+
     100% {
         color: white;
     }
 }
-.lorem, .lorem a{
+
+.lorem,
+.lorem a {
     transition: all 1s;
 }
-.lorem:hover, .lorem a:hover{
+
+.lorem:hover,
+.lorem a:hover {
     color: white;
     animation-name: other-example;
     animation-duration: 0.35s;
 }
+
 @media only screen and (max-width: 1000px) {
- .hoverBox p ,.lorem a{
-     font-size: 16px;
- }
-    
-}
-@media only screen and (max-width: 800px) {
-    .FlexDiv{
-        padding: 7% 10% 0 5%;
-    }
-    .textDifferent{
+
+    .hoverBox p,
+    .lorem a {
         font-size: 16px;
     }
-   }
-   @media only screen and (max-width: 650px) {
-    .FlexDiv{
+
+}
+
+@media only screen and (max-width: 800px) {
+    .FlexDiv {
+        padding: 7% 10% 0 5%;
+    }
+
+    .textDifferent {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .FlexDiv {
         padding: 7% 5% 0 5%;
     }
-   }
-   @media only screen and (max-width: 560px) {
-    .FlexDiv{
+}
+
+@media only screen and (max-width: 560px) {
+    .FlexDiv {
         padding: 15% 5% 0 5%;
     }
+
     .hoverBox p {
         font-size: 20px;
     }
-    .textDifferent{
+
+    .textDifferent {
         font-size: 20px;
         margin-bottom: 60px;
     }
-    .lorem{
+
+    .lorem {
         display: none;
     }
-    .FlexDiv{
+
+    .FlexDiv {
         flex-direction: column;
         direction: rtl;
     }
-    .footer{
+
+    .footer {
         flex-direction: column;
         direction: rtl;
         margin-top: -60px;
-       justify-content: space-around;
+        justify-content: space-around;
         padding-top: 30px;
     }
-    .footer p{
+
+    .footer p {
         font-size: 20px;
     }
-    .about{
+
+    .about {
         font-size: 20px;
-   
-     margin-top: 10px;
-     margin-bottom: 35px;
+
+        margin-top: 10px;
+        margin-bottom: 35px;
     }
-   }
-   @media only screen and (max-width: 220px) {
-       .textDifferent{
-           font-size: 16px;
-       }
+}
+
+@media only screen and (max-width: 220px) {
+    .textDifferent {
+        font-size: 16px;
+    }
 }
