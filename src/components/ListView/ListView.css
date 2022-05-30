@@ -21,11 +21,12 @@
 .showFlexText{
     color:white;
     padding-top: 15px;
+    cursor: default;
 }
 .showFlexText1 {
     color:white;
     padding-top: 15px;
-  
+    cursor:default
  
 }
 .hover-box{
@@ -40,7 +41,8 @@
     transform-origin: left top ;
     z-index: 998;
     max-width: 200px;
-}
+
+ }
 .showFlexText1:hover + .showingPic {
     z-index: 999;
     transform: scale(1,1) translate(-100% , 0% ) ;

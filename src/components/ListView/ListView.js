@@ -1,6 +1,10 @@
 import React,{useEffect} from "react";
 import '../ListView/ListView.css'
 import random from '../../images/rectangle39.svg';
+import random1 from '../../images/random1.jpg';
+import random2 from '../../images/random2.jpg';
+import random3 from '../../images/random3.jpg';
+import random4 from '../../images/random4.jpg';
 const ListView = ({menuHandler}) => {
     useEffect(()=> {
         menuHandler(true)
@@ -25,7 +29,7 @@ const ListView = ({menuHandler}) => {
                 <p className="showFlexText">1 JUN - 10 SEP 21</p>
                 <div className="hover-box">
                       <p className="showFlexText1">MAKE AN ISLAND FOR YOURSELF</p> 
-                      <img className="showingPic" src={random}/>
+                      <img className="showingPic" src={random1}/>
                 </div>
              
             </div>
@@ -33,7 +37,7 @@ const ListView = ({menuHandler}) => {
                 <p className="showFlexText">10 JUN - 30 DEC 21</p>
                 <div className="hover-box">
                     <p className="showFlexText1">LAST FLOWERS OF XX CENTURY – GENERATION Y GROUP EXHIBITION</p> 
-                    <img className="showingPic" src={random}/>
+                    <img className="showingPic" src={random2}/>
                 </div>
                
             </div>
@@ -41,7 +45,7 @@ const ListView = ({menuHandler}) => {
                 <p className="showFlexText">08 JUL - 25 SEP 21</p>
                 <div className="hover-box">
                    <p className="showFlexText1">FOGS TURNED INTO EPIC STORY IN MY HEAD</p> 
-                   <img className="showingPic" src={random}/>
+                   <img className="showingPic" src={random3}/>
                 </div>
                 
             </div>
@@ -49,7 +53,7 @@ const ListView = ({menuHandler}) => {
                 <p className="showFlexText">23 APR - 23 SEP 21</p>
                 <div className="hover-box">
                     <p className="showFlexText1">BAKU STREET PHOTO FESTIVAL 2021</p>  
-                    <img className="showingPic" src={random}/>
+                    <img className="showingPic" src={random4}/>
                 </div>
               
             </div>

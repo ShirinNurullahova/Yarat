@@ -83,6 +83,7 @@ text-align: left;
     transform-origin: right top;
     z-index: 998;
     max-width: 200px;
+    max-height: 400px;
 }
 
 .lorem:hover+.showPicture {
