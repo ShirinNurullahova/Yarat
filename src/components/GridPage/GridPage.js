@@ -8,11 +8,13 @@ import GridPageHeader from "../GridPageHeader/GridPageHeader";
 import DataAndTime from "../DataAndTime/DataAndTime";
 import ListView from "../ListView/ListView";
 import random from '../../images/rectangle39.svg';
+import random3 from '../../images/random3.jpg';
+import random2 from '../../images/random2.jpg';
 const GridPage =({menuHandler})=>{
-    const imagesZindex = [calendar,calendar,calendar,calendar,calendar,calendar,calendar,
-        calendar,calendar,calendar,calendar,calendar,calendar,calendar,
+    const imagesZindex = [calendar,random3,calendar,random3,calendar,random3,calendar,
+        calendar,calendar,calendar,random3,calendar,calendar,calendar,
         calendar,calendar,calendar,calendar,calendar,calendar,calendar,calendar,calendar,
-        calendar,calendar,calendar,calendar,calendar,calendar,calendar,
+        random3,calendar,calendar,random2,calendar,calendar,random3,
         calendar];
         // const array =[];
         useEffect(()=> {

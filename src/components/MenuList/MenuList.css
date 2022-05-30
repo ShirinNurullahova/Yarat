@@ -64,7 +64,7 @@ text-align: left;
     position: relative;
 }
 
-.footer p,
+.press,
 .about {
     color: white;
     font-size: 20px;
@@ -182,14 +182,15 @@ text-align: left;
         align-items: flex-end;
     }
 
-    .footer p {
+    .press {
         font-size: 20px;
+        margin-top: 20px;
     }
 
     .about {
         font-size: 20px;
 
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 35px;
     }
 }

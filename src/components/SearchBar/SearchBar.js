@@ -9,15 +9,21 @@ const SearchBar = ({ data, placeholder ,open}) => {
 
     const handleFilter = (event) => {
         const searchWord = event.target.value;
-        setWordEntered(searchWord);
+        setWordEntered(searchWord.toUpperCase());
         const newFilter = data.filter((value) => {
             return value.title.toLowerCase().includes(searchWord.toLowerCase());
         });
-
+        console.log(newFilter)
+        const newarr = newFilter.map(e => {
+            return {
+                'title': e.title.toUpperCase(),
+                'link' : e.link
+            }
+        })
         if (searchWord === "") {
             setFilteredData([]);
         } else {
-            setFilteredData(newFilter);
+            setFilteredData(newarr);
         }
        
     };

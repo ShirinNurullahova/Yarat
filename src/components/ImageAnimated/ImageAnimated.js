@@ -6,11 +6,11 @@ import random2 from '../../images/random2.jpg';
 import random3 from '../../images/random3.jpg';
 import random6 from '../../images/random6.jpg';
 const ImageAnimated = () => {
-  const title = [{ pg: "Aliquet nunc volutpat aliquam est malesuada ut /", span: " 12 SEP - 12 NOV 21" },
-  { pg: "Et magna venenatis aliquam nec, faucibus neque /", span: " 8 FEB - 8 MAR 21 " },
-  { pg: "Proin non at dolor sed lorem nibh / ", span: "16 MAR - 14 MAR 21" },
-  { pg: "Scelerisque et platea pellentesque vel vestibulum sed cras amet /", span: " 25 MAR - 25 APR 21" }]
-  const imgArr = [{random: random6, title:title[0].pg},{random: random1, title:title[1].pg},{random: random2, title:title[2].pg},{random: random3, title:title[3].pg}];
+  const title = [{ pg: "Aliquet nunc volutpat aliquam est malesuada ut /12 SEP - 12 NOV 21", span: " " },
+  { pg: "Et magna venenatis aliquam nec, faucibus neque /8 FEB - 8 MAR 21", span: "  " },
+  { pg: "Proin non at dolor sed lorem nibh /16 MAR - 14 MAR 21 ", span: "" },
+  { pg: "Scelerisque et platea pellentesque vel vestibulum sed cras amet /25 MAR - 25 APR 21", span: " " }]
+  const imgArr = [{random: random6, title:title[0].pg , span:title[0].span},{random: random1, title:title[1].pg ,span:title[1].span},{random: random2, title:title[2].pg ,span:title[2].span},{random: random3, title:title[3].pg ,span:title[3].span}];
  
   const canvasFixed = useRef();
   let id,id2,id3
@@ -85,20 +85,24 @@ const ImageAnimated = () => {
             var img = document.createElement("img");
             
             var textTitle =document.createElement("p");
+    
+
             img.src = imgArr[i].random;
             textTitle.textContent=imgArr[i].title
-            
+          
             img.className = "imageHolderImg";
             textTitle.className = "titleHeader";
-
+          
             img.style.top = mouse.cY + "px";
             img.style.left = mouse.cX + "px";
 
             textTitle.style.top = mouse.cY + "px";
             textTitle.style.left = mouse.cX + "px";
           
+        
             canvasFixed.current.appendChild(img);
             canvasFixed.current.appendChild(textTitle);
+       
             if (i < imgArr.length-1) i++;
             else i=0
           }, 200);
