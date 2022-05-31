@@ -186,11 +186,24 @@ text-align: left;
     .press {
         font-size: 20px;
         margin-top: 20px;
+        font-family: Helvetica;
+font-size: 20px;
+font-weight: 300;
+line-height: 30px;
+letter-spacing: 0.15em;
+text-align: right;
+
     }
 
     .about {
         font-size: 20px;
-
+        font-family: Helvetica ;
+        font-size: 20px;
+        font-weight: 3g00;
+        line-height: 30px;
+        letter-spacing: 0.15em;
+        text-align: right;
+        
         margin-top: 20px;
         margin-bottom: 35px;
     }
