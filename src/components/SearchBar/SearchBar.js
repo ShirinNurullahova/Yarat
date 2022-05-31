@@ -1,8 +1,8 @@
-import { setSelectionRange } from '@testing-library/user-event/dist/utils';
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import '../../components/SearchBar/SearchBar.css'
-
+import xett from '../../images/altdanxet.png';
 const SearchBar = ({ data, placeholder ,open}) => {
     const [filteredData, setFilteredData] = useState([]);
     const [wordEntered, setWordEntered] = useState("");
@@ -52,6 +52,9 @@ const SearchBar = ({ data, placeholder ,open}) => {
                                 <p  className="dataItem" onClick={clearInput} >
                                     {value.title}
                                 </p>
+                                <div className="borderBottom">
+                                <img src={xett}/>
+                                </div>
                             </Link>
                         );
                     })}
