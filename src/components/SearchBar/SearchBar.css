@@ -80,4 +80,17 @@ a {
    margin-left: 15%;
  }
 } 
+@media only screen and (max-width:  600px) {
+  .search input {
+    width: 200px
+  }
+  .dataResult {
+    margin-left: 2%;
+    width: 300px;
+  }
+  .search{
+    margin-left: -5%;
+  }
+ } 
 
+ 
