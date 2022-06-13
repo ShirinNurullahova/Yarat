@@ -18,6 +18,11 @@
     font-size: 80px;
     width: 100%;
 }
+@media only screen and (max-width: 640px) {
+.home_page{
+    height: 85vh;
+}
+   }
 @media only screen and (max-width: 560px) {
     .home_page_box_text{
         margin-top: 100px;

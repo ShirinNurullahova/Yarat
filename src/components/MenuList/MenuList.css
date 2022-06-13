@@ -61,7 +61,7 @@ text-align: left;
     padding-top: 12%;
     padding-right: 7%;
     background-color: #0D0D0D;
-    /* height: 30vh; */
+    height: 30vh;
     position: relative;
 }
 
@@ -161,6 +161,7 @@ text-align: left;
     .textDifferent {
         font-size: 20px;
         margin-bottom: 60px;
+        text-align: right;
     }
 
     .lorem {
@@ -178,6 +179,7 @@ text-align: left;
         flex-direction: column;
       padding-right: 4%;
         margin-top: -60px;
+        padding-bottom: 30px;
         justify-content: space-around;
         padding-top: 30px;
         align-items: flex-end;
@@ -188,7 +190,7 @@ text-align: left;
         margin-top: 20px;
         font-family: Helvetica;
 font-size: 20px;
-font-weight: 300;
+/* font-weight: 500; */
 line-height: 30px;
 letter-spacing: 0.15em;
 text-align: right;
@@ -199,7 +201,7 @@ text-align: right;
         font-size: 20px;
         font-family: Helvetica ;
         font-size: 20px;
-        font-weight: 3g00;
+        /* font-weight: 500; */
         line-height: 30px;
         letter-spacing: 0.15em;
         text-align: right;
