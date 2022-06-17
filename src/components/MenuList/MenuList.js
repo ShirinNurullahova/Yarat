@@ -36,7 +36,7 @@ const MenuList = (props)=>{
                        
                     </div>
                     <div className="hoverBox">
-                        <p className="lorem"><Link onClick={props.open ? props.open : null}  to="/space" style={{ textDecoration: 'none'}}>ARTIM PROJECT SPACE</Link></p>
+                        <p className="lorem"><Link onClick={props.open ? props.open : null}  to="/yaratcenter" style={{ textDecoration: 'none'}}>ARTIM PROJECT SPACE</Link></p>
                         {props.open && 
                            <img className='showPicture'  src={random1} />
                            }
